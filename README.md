@@ -27,32 +27,36 @@ Due to rising sea levels caused by global warming, island nations such as the Ma
 ## **Repository Structure**
 ```
 ├── README.md
-├── scripts/
-│   ├── ahp_analysis.m           # AHP for policy evaluation
-│   ├── gray_prediction.m        # Grey prediction model for EDPs and sea-level rise
-│   ├── markov_chain_model.m     # Markov Chain for migration simulation
-│   ├── pca_analysis.m           # PCA for greenhouse gas contribution analysis
-│   ├── interpolation.m          # Data interpolation for missing values
-│   ├── entropy_weight.m         # Entropy method for index weighting
-│   ├── data_preprocessing.m     # Data cleaning and standardization
-│   ├── visualization.m          # Data visualization scripts
-│   ├── sensitivity_analysis.m   # Sensitivity analysis for model parameters
-│   ├── validation.m             # Model validation and error calculation
-│   ├── model_evaluation.m       # Policy evaluation using AHP
-│   └── matrix_operations.m      # Matrix operations for PCA and Markov Chain
-├── data/                        # Datasets used in the analysis
-├── results/                     # Output files and visualizations
-└── docs/                        # Documentation and references
+├── team_co_edit/
+│   └── (additional files related to team collaboration)
+├── Certificate.pdf
+├── ICM_Paper_2000865.pdf
+└── scripts/
+├── ahp_analysis.m           # AHP implementation for policy comparison and evaluation model
+├── gray_prediction.m        # Grey prediction model for risk population forecasting
+├── markov_chain_model.m     # Markov chain model for population migration trend prediction
+└── pca_analysis.m           # PCA for analyzing the contribution of greenhouse gases by various countries
 ```
 
 ---
 
 ## **Script Descriptions**
 
-1. **`gray_prediction.m`**: Predicts the number of EDPs and sea-level rise rates using the Grey Prediction Model.
-2. **`pca_analysis.m`**: Identifies countries with the highest greenhouse gas contributions using PCA.
-3. **`ahp_analysis.m`**: Evaluates migration policies using the Analytic Hierarchy Process.
-4. **`markov_chain_model.m`**: Simulates migration patterns of EDPs to destination countries using Markov Chains.
+1. **ahp_analysis.m**
+  - **Functionality**: Implementation of the Analytic Hierarchy Process (AHP) for policy evaluation and comparison.
+  - **Content**: Construction of criteria matrix, computation of weights, consistency check, etc.
+
+2. **gray_prediction.m**
+  - **Functionality**: Grey prediction model for forecasting risk populations.
+  - **Content**: Data accumulation, parameter estimation, prediction calculation, etc.
+
+3. **markov_chain_model.m**
+  - **Functionality**: Markov chain model for predicting population migration trends.
+  - **Content**: Construction of transition probability matrix, state prediction, etc.
+
+4. **pca_analysis.m**
+  - **Functionality**: Principal Component Analysis (PCA) for analyzing the contribution to greenhouse gases by different countries.
+  - **Content**: Data standardization, covariance matrix computation, eigenvalue extraction, etc.
 
 
 
