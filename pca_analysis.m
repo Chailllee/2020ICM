@@ -8,14 +8,18 @@ s2=ones(1,10)*100;
 s=s2-s1; % 森林非覆盖率
 data=[a;b;s;v];
 data=data';
+
 p_threshold=0.85; % 累计贡献率阈值
 [m,n]=size(data);
 normal_data=(data-repmat(mean(data),m,1))./repmat(std(data),m,1);
 sigama=cov(normal_data);
 [V,lamadas]=eig(sigama);
 lamada=sum(lamadas);
+
+% 特征值进行降序排列，并记录特征值与特征向量的对应顺序
 [order_lamada,index]=sort(-lamada);
 order_lamada=-order_lamada;
+%确定主成分个数
 for i=1:length(lamada)
     P=sum(order_lamada(1:i))/sum(order_lamada);
     if P>p_threshold
@@ -23,17 +27,22 @@ for i=1:length(lamada)
     end
 end
 num_pca=i;
+%提取主成分的特征向量
 V_main=V(:,index(1:i));
+%计算主成分得分
 new_score=normal_data*V_main;
+%输出结果
 disp('特征向量、累计贡献率：')
 V_main,P
 disp('特征值与主成分个数：')
 lamada,num_pca
+
 c=sqrt((order_lamada.*order_lamada)./sum(order_lamada.*order_lamada));
 for i=1:10
     score_sum(i)=sum(c.*[s(i),v(i),b(i),a(i)]);    
 end
 score_sum;
+
 plot3(normal_data(:,1),normal_data(:,2),normal_data(:,3),'b*')
 hold on
 new_data=(V_main*V_main'*normal_data')';
