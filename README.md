@@ -43,20 +43,20 @@ Due to rising sea levels caused by global warming, island nations such as the Ma
 ## **Script Descriptions**
 
 1. **ahp_analysis.m**
-  - **Functionality**: Implementation of the Analytic Hierarchy Process (AHP) for policy evaluation and comparison.
-  - **Content**: Construction of criteria matrix, computation of weights, consistency check, etc.
+    - *Functionality*: Implementation of the Analytic Hierarchy Process (AHP) for policy evaluation and comparison.
+    - *Content*: Construction of criteria matrix, computation of weights, consistency check, etc.
 
 2. **gray_prediction.m**
-  - **Functionality**: Grey prediction model for forecasting risk populations.
-  - **Content**: Data accumulation, parameter estimation, prediction calculation, etc.
+    - *Functionality*: Grey prediction model for forecasting risk populations.
+    - *Content*: Data accumulation, parameter estimation, prediction calculation, etc.
 
 3. **markov_chain_model.m**
-  - **Functionality**: Markov chain model for predicting population migration trends.
-  - **Content**: Construction of transition probability matrix, state prediction, etc.
+    - *Functionality*: Markov chain model for predicting population migration trends.
+    - *Content*: Construction of transition probability matrix, state prediction, etc.
 
 4. **pca_analysis.m**
-  - **Functionality**: Principal Component Analysis (PCA) for analyzing the contribution to greenhouse gases by different countries.
-  - **Content**: Data standardization, covariance matrix computation, eigenvalue extraction, etc.
+    - *Functionality*: Principal Component Analysis (PCA) for analyzing the contribution to greenhouse gases by different countries.
+    - *Content*: Data standardization, covariance matrix computation, eigenvalue extraction, etc.
 
 
 
