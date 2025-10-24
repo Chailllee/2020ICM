@@ -17,24 +17,18 @@ Due to rising sea levels caused by global warming, island nations such as the Ma
 
 ## **Key Features**
 1. **Grey Prediction Model**: Predicts the number of EDPs and sea-level rise rates.
-   - Core differential equation:   
-\[  \frac{dx^{(1)}}{dt} + a x^{(1)} = b  \]
-- Forecasted value:  
-\[  \hat{x}^{(0)}(k+1) = \hat{x}^{(1)}(k+1) - \hat{x}^{(1)}(k)  \]
+   - Core differential equation:   $\frac{dx^{(1)}}{dt} + a x^{(1)} = b$
+- Forecasted value:  $\hat{x}^{(0)}(k+1) = \hat{x}^{(1)}(k+1) - \hat{x}^{(1)}(k)$
 2. **Principal Component Analysis (PCA)**: Identifies countries contributing most to greenhouse gas emissions.
-  - Eigen decomposition:  
-\[  C v = \lambda v  \]
-- Weighted score:  
-  \[  S_i = \sum_j c_j x'_{ij}  \]
+  - Eigen decomposition: $Cv = \lambda v$
+- Weighted score: $S_i = \sum_j c_j x'_{ij}$
 3. **Analytic Hierarchy Process (AHP)**: Evaluates migration policies based on economic, political, and cultural factors.
-  - Consistency ratio:  
-\[  CR = \frac{CI}{RI}, \quad CI = \frac{\lambda_{\text{max}} - n}{n - 1}  \]
+  Consistency ratio:  
+$$CR = \frac{CI}{RI}, \quad CI = \frac{\lambda_{\text{max}} - n}{n - 1}$$
 4. **Markov Chain Model**: Simulates migration patterns of EDPs to destination countries.
-    - Indicator weight:   
-\[  w_j = \frac{1 - e_j}{\sum (1 - e_j)}  \]
+ Indicator weight:  $w_j = \frac{1 - e_j}{\sum (1 - e_j)}$
 5. **Entropy Weight Method**: Calculates weights for policy evaluation indices.
-- State transition:   
-\[  X^{(t)} = X^{(0)} P^t  \]
+  State transition:   $X^{(t)} = X^{(0)} P^t$
 ---
 
 ## **Repository Structure**
